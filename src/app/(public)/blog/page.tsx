@@ -14,6 +14,11 @@ export default async function ListBlogs() {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
       cache: 'no-cache',
     })
+    // api của mình tự tạo từ api/../route.ts
+    const myResponse = await fetch('http://localhost:3000//api/posts')
+    console.log('🔥 ~ ListBlogs ~ myResponse:', myResponse)
+
+
     data = await response.json()
 
   } catch (error: any) {
