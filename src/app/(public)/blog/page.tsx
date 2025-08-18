@@ -15,7 +15,7 @@ export default async function ListBlogs() {
       cache: 'no-cache',
     })
     // api của mình tự tạo từ api/../route.ts
-    const myResponse = await fetch('http://localhost:3000//api/posts')
+    const myResponse = await fetch('https://bc-83-nextjs.vercel.app/api/posts')
     console.log('🔥 ~ ListBlogs ~ myResponse:', myResponse)
 
 
